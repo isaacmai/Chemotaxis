@@ -1,22 +1,17 @@
- Bacteria Isaac;
- Bacteria Teacher;
- Bacteria Diego;
+int[] buggies = new int[1000];
  void setup()   
  {     
    size(500,500);
-   Isaac = new Bacteria(250,250);
-   Teacher = new Bacteria(250,250);
-   Diego = new Bacteria(250,250);
+   for(i = 0; i < buggies.length; i++)
+   {
+   buggies[i] = new Bacteria(250,250);
+   }
  }   
  void draw()   
  {    
    background(0);
-   Isaac.move();
-   Isaac.show();
-   Teacher.show();
-   Teacher.move();
-   Diego.show();
-   Diego.move();
+   buggies[i].move();
+   buggies[i].show();
  }  
  class Bacteria    
  {     
