@@ -4,9 +4,9 @@
  void setup()   
  {     
    size(500,500);
-   tate = new Bacteria(250,250);
-   sneako = new Bacteria(250,250);
-   mat = new Bacteria(250,250);
+   Isaac = new Bacteria(250,250);
+   Teacher = new Bacteria(250,250);
+   Diego = new Bacteria(250,250);
  }   
  void draw()   
  {    
