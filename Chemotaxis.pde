@@ -1,17 +1,23 @@
-int[] buggies = new int[1000];
+ Bacteria Isaac;
+ Bacteria Teacher;
+ Bacteria Joe;
  void setup()   
  {     
    size(500,500);
-   for(i = 0; i < buggies.length; i++)
-   {
-   buggies[i] = new Bacteria(250,250);
+   Isaac = new Bacteria(250,250);
+   Teacher = new Bacteria(250,250);
+   Joe = new Bacteria(250,250);
    }
  }   
  void draw()   
  {    
    background(0);
-   buggies[i].move();
-   buggies[i].show();
+   Isaac.move();
+   Isaac.show();
+   Teacher.show();
+   Teacher.move();
+   Joe.show();
+   Joe.move();
  }  
  class Bacteria    
  {     
