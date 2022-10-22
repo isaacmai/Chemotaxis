@@ -1,28 +1,28 @@
-Bacteria MrChan;
- Bacteria You;
- Bacteria Me;
+ Bacteria Isaac;
+ Bacteria Teacher;
+ Bacteria Diego;
  void setup()   
  {     
    size(500,500);
-   MrChan = new Bacteria(250,250);
-   You = new Bacteria(250,250);
-   Me = new Bacteria(250,250);
+   tate = new Bacteria(250,250);
+   sneako = new Bacteria(250,250);
+   mat = new Bacteria(250,250);
  }   
  void draw()   
  {    
    background(0);
-   me.move();
-   me.show();
-   You.show();
-   You.move();
-   MrChan.show();
-   MrChan.move();
+   Isaac.move();
+   Isaac.show();
+   Teacher.show();
+   Teacher.move();
+   Diego.show();
+   Diego.move();
  }  
  class Bacteria    
  {     
    int mySize, myX, myY, myColor;
    Bacteria(int x, int y){
-     mySize = 25;
+     mySize = 20;
      myX = x;
      myY = y; 
      myColor = color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255),200);
