@@ -1,13 +1,56 @@
- //declare bacteria variables here   
+Bacteria MrChan;
+ Bacteria You;
+ Bacteria Me;
  void setup()   
  {     
- 	//initialize bacteria variables here   
+   size(500,500);
+   MrChan = new Bacteria(250,250);
+   You = new Bacteria(250,250);
+   Me = new Bacteria(250,250);
  }   
  void draw()   
  {    
- 	//move and show the bacteria   
+   background(0);
+   me.move();
+   me.show();
+   You.show();
+   You.move();
+   MrChan.show();
+   MrChan.move();
  }  
  class Bacteria    
  {     
- 	//lots of java!   
- }    
+   int Size, myX, myY, Color;
+   Bacteria(int x, int y){
+     Size = 25;
+     myX = x;
+     myY = y; 
+     Color = color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255),200);
+   }
+   void show()
+   {
+     fill(Color);
+     ellipse(myX,myY,Size,Size);
+   }
+   void move()
+   {
+     if (mousePressed == true){
+       if (mouseX > myX){
+       myX = myX + (int)((Math.random()*4)-1);
+     }
+     else{
+        myX = myX + (int)((Math.random()*4)-3);
+     }
+     if (mouseY > myY){
+       myY = myY + (int)((Math.random()*4)-1);
+     }
+     else{
+        myY = myY + (int)((Math.random()*4)-3);
+     }
+     }
+     else{
+       myX = myX + (int)((Math.random()*4)-2);
+       myY = myY + (int)((Math.random()*4)-2);
+     }
+   }
+ }
