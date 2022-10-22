@@ -20,17 +20,17 @@ Bacteria MrChan;
  }  
  class Bacteria    
  {     
-   int Size, myX, myY, Color;
+   int mySize, myX, myY, myColor;
    Bacteria(int x, int y){
-     Size = 25;
+     mySize = 25;
      myX = x;
      myY = y; 
-     Color = color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255),200);
+     myColor = color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255),200);
    }
    void show()
    {
-     fill(Color);
-     ellipse(myX,myY,Size,Size);
+     fill(myColor);
+     ellipse(myX,myY,mySize,mySize);
    }
    void move()
    {
