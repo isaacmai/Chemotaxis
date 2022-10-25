@@ -7,8 +7,7 @@
    Isaac = new Bacteria(250,250);
    Teacher = new Bacteria(250,250);
    Joe = new Bacteria(250,250);
-   }
- }   
+ }  
  void draw()   
  {    
    background(0);
